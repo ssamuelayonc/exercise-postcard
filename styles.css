@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    font-family: Arial, sans-serif;
+}
+
+.postcard {
+    background: white;
+    width: 520px;
+
+    padding: 15px 15px 25px 15px;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 70px;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+/* CONTENIDO */
+
+.content {
+    display: flex;
+    gap: 25px;
+}
+
+.left,
+.right {
+    flex: 1;
+}
+
+.left p {
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+/* FORMULARIO */
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right input {
+    border: none;
+    border-bottom: 1px solid gray;
+
+    padding: 5px 0;
+    margin-bottom: 15px;
+
+    font-size: 16px;
+}
+
+.right input:focus {
+    outline: none;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+.footer button {
+    padding: 5px 10px;
+
+    border: 1px solid gray;
+    background: lightgray;
+
+    cursor: pointer;
+}
